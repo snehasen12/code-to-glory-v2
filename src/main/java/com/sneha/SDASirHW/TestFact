@@ -1,0 +1,26 @@
+package com.sneha.SDASirHW;
+import java.util.*;
+class PowFactorFunction {
+    int fact(){
+        int f=1;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int n = sc.nextInt();
+        for(int i=1;i<=n;i++){
+            f=f*i;
+        }
+        return f;
+    }
+    //int fact(int d){
+    //    int f=1;
+    //    Scanner sc = new Scanner(System.in);
+    //    System.out.println("Enter a number:");
+    //    num = sc.nextInt();
+    //}
+}
+public class TestFact{
+    public static void main(String[] args) {
+        PowFactorFunction h = new PowFactorFunction();
+        System.out.println("The factorial of a number:"+h.fact());
+    }
+}
